@@ -22,12 +22,12 @@ type tree struct {
 	directories uint64
 }
 
-func (t *tree) isDirOnly() bool {
-	return t.c.Bool("d")
-}
-
 func newTree(c *cli.Context) *tree {
 	return &tree{c: c}
+}
+
+func (t *tree) isDirOnly() bool {
+	return t.c.Bool("d")
 }
 
 // TreeAction tree command action
