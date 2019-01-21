@@ -29,3 +29,4 @@ $ ./go2ee -d
 ## Unimplemented
 - `L` option can not be specified
 - Symbolic link is not supported
+- Only MacOS supported
